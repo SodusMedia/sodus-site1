@@ -17,26 +17,26 @@ html{
     position: sticky;
     top: 0;
 }
-.navbar u1{
+.navbar ul{
     display: flex;
     list-style: none;
-    margin: 20px 0px;  
+    margin: 20px 0px;
 }
-.navbar u1 li{
+.navbar ul li{
     font-family: century;
     font-size: 1.1rem;
     font-weight: bold;
 }
-.navbar u1 li a{
+.navbar ul li a{
     text-decoration: none;
     color: white;
-    padding: 10px 30px;
+    padding: 8px 25px;
     transition: all .5s ease;
 }
-.navbar u1 li a:hover{
+.navbar ul li a:hover{
     background-color: white;
     color: black;
-    box-shadow: 0 010px white;
+    box-shadow: 0 0 10px white;
 }
 
 /* Home Section */
@@ -44,7 +44,7 @@ html{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 2000px;
+    height: 940px;
     justify-content: flex-start;
     align-items: left;
     color: white;
@@ -54,8 +54,8 @@ html{
     position: absolute;
     top: 0;
     right: 0;
-    background: url('../static/images/soduspic.jpg') no-repeat center center/cover; 
-    height: 2000px;
+    background: url('../simages/sodusp5.jpg') no-repeat center center/cover; 
+    height: 1000px;
     width: 100%;
     z-index: -1;
     opacity: .8;
@@ -75,6 +75,11 @@ html{
     text-align: center;
     margin: 40px 0px;
 }
+.main p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 .btn{
     padding: 10px 35px;
     background-color: transparent;
@@ -92,7 +97,7 @@ html{
     transform: translate(0, -10px);
 }
 .btn:nth-child(1):hover{
-    background-color: #0061FF;
+    background-color: rgb(213, 48, 169);
 }
 
 /* About Section */
@@ -125,23 +130,52 @@ html{
 #portfolio{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(11, 4, 4, 0.5);
     color: white;
     align-items: center;
     padding: 20px;
 
 }
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
+.gallery {
+  text-align: center;
+  padding: 2rem;
 }
-.gallery img{
-    width: 360px;
-    height: 240px;
-    margin: 10px;
+
+.portfolio-img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+.portfolio-img:hover {
+  transform: scale(1.05);
+}
+
+.btn-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.btn-stack .btn {
+  margin: 10px 0; /* vertical spacing between buttons */
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffdec3;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px; /* optional: consistent button width */
+}
+
+.btn-stack .btn:hover {
+  background-color:#ffdec3;
+}
+
 
 /* Service Section */
 #services{
@@ -158,13 +192,13 @@ html{
 .box{
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 450px;
+    width: 450px;
+    height: 550px;
     border: 1px solid black;
     margin: 10px;
     align-items: center;
     text-align: justify;
-    padding: 10px;
+    padding: 5px;
     border-radius: 15px;
     background: linear-gradient(to top,#57203f 50%, white 50%);
     background-size: 100% 200%;
@@ -180,7 +214,7 @@ html{
     width: 80px;
     height: 80px;
     background-color: white;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Contact Section */
@@ -224,76 +258,97 @@ html{
     cursor: pointer;
     box-shadow: 0 0 10px white;
 }
-.links u1{
-    position: absolute;
-    top: 10;
-    left: 75%;
-    padding: 0;
-    margin: 0;
-    transform: translate(-50%, -50%);
-    display: flex;
-}
-.links u1 li{
-    list-style: none;
-    margin: 0 15px;
-}
-.links u1 li .fa{
-    font-size: 30px;
-    line-height: 60px;
-    transition: .5s;
-    color: rgb(105, 4, 70);
-}
-.links u1 li .fa:hover{
-    color: white;
-}
-.links u1 li .material-icons{
-    font-size: 30px;
-    line-height: 60px;
-    transition: .5s;
-    color: rgb(105, 4, 70);
-}
-.links u1 li .material-icons:hover{
-    color: #fff;
-}
-.links u1 li a{
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 60px;
-    border-radius: 40%;
-    background-color: white;
-    text-align: center;
-    transition: .5s;
-    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-}
-.links u1 li a:hover{
-    transform: translate(0, -10px);
-}
-.links u1 li:nth-child() a:hover{
-    background-color: #0061FF;
-}
-.links u1 li:nth-child(1) a:hover{
-    background-color: #0A66C2;
-}
-.links u1 li:nth-child(2) a:hover{
-    background-color: #131418;
-}
-.links u1 li:nth-child(3) a:hover{
-    background-color: #E4405F;
-}
-.links u1 li:nth-child(4) a:hover{
-    background-color: #1DA1F2;
+
+.links {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Social icon list */
+.links ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* Each icon item */
+.links ul li {
+  list-style: none;
+  margin: 15px 0;
+}
 
+/* Font Awesome icons */
+.links ul li .fa,
+.links ul li .material-icons {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.5s;
+  color: rgb(105, 4, 70);
+}
 
+.links ul li .fa:hover,
+.links ul li .material-icons:hover {
+  color: white;
+}
 
+/* Icon container */
+.links ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  background-color: white;
+  text-align: center;
+  line-height: 60px;
+  transition: 0.5s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
 
+.links ul li a:hover {
+  transform: translateY(-10px);
+}
 
+/* Hover background colors */
+.links ul li:nth-child(1) a:hover {
+  background-color: #0A66C2; /* LinkedIn */
+}
+.links ul li:nth-child(2) a:hover {
+  background-color: #00ff8c; /* Whatsapp */
+}
+.links ul li:nth-child(3) a:hover {
+  background-color: #E4405F; /* Instagram */
+}
+.links ul li:nth-child(4) a:hover {
+  background-color: #000000; /* Tiktok */
+}
 
+/* Footer text */
+#wrd {
+  text-align: center;
+  margin-top: 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
 
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .links ul li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+  }
 
+  .links ul li {
+    margin: 10px 0;
+  }
 
-
-
+  #wrd {
+    font-size: 0.8rem;
+  }
+}

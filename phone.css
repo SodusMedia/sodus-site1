@@ -1,5 +1,5 @@
 /* Navbar */
-.navbar u1{
+.navbar ul{
     flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
@@ -7,7 +7,7 @@
 
 /* Home */
 #home{
-    height: 2000px;
+    height: 900px;
 }
 .headings{
     font-size: 1.8rem;
@@ -15,11 +15,11 @@
 
 /* About */
 #pic img{
-    width: 375px;
-    height: 300px;
+    width: 275px;
+    height: 150px;
 }
 #intro h2{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 /* Portfolio */
@@ -32,42 +32,5 @@
 /* Contact */
 #contact{
     height: 700px;
-    padding: 30px;
-}
-.input{
-    width: 80%;
-}
-.msg{
-    width: 70%;
-}
-#send{
-    width: 20%;
-} 
-.links u1{
-    position: absolute;
-    top: 10;
-    left: 45%;
-    padding: 0;
-    margin: 0;
-    transform: translate(-50%, -50%);
-    display: flex;
-}
-.links u1 li .material-icons{
-    font-size: 15px;
-    line-height: 30px;
-}
-.links u1 li .fa{
-    font-size: 15px;
-    line-height: 20px;
-}
-.links u1 li a{
-    width: 20px;
-    height: 20px;
-    border-radius: 20%;
-}
-.links u1 li a:hover{
-    transform: translate(0, -10px);
-}
-.wrd{
-font-size: 5rem;
+    padding: 5px;
 }

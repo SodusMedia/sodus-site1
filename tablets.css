@@ -1,5 +1,5 @@
 /* Navbar */
-.navbar u1{
+.navbar ul{
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -27,22 +27,4 @@
 #contact{
     height: 800px;
     padding: 10px;
-}
-input{
-    width: 60%;
-}
-#msg{
-    width: 55%;
-}
-#send{
-    width: 20%;
-}
-.links u1{
-    position: absolute;
-    top: 10;
-    right: 80%;
-    padding: 0;
-    margin: 0;
-    transform: translate(-50%, -50%);
-    display: flex;
 }
